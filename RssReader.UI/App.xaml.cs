@@ -12,12 +12,13 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using RssReader.UI.Logic;
+using RssReader.UI.Logic.ViewModels;
 
 namespace RssReader.UI
 {
     public partial class App : Application
     {
+        
         private static MainViewModel viewModel = null;
 
         /// <summary>
@@ -36,6 +37,11 @@ namespace RssReader.UI
             }
         }
 
+
+
+
+
+        //http://ciscoperez.wordpress.com/2011/10/28/instanciamiento-en-mvvm/
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
         /// </summary>

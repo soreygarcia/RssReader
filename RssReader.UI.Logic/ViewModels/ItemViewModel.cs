@@ -12,70 +12,83 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using RssReader.UI.Logic.Common;
 
-namespace RssReader.UI.Logic
+namespace RssReader.UI.Logic.ViewModels
 {
     public class ItemViewModel : BindableBase
     {
-        private string _lineOne;
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
-        /// </summary>
-        /// <returns></returns>
-        public string LineOne
+        private string content;
+        private DateTime date;
+        private string icon;
+        private string identifier;
+        private string title;
+
+        public ItemViewModel()
+        {
+
+        }
+
+        public string Content
         {
             get
             {
-                return _lineOne;
+                return content;
             }
             set
             {
-                if (value != _lineOne)
-                {
-                    _lineOne = value;
-                    NotifyPropertyChanged("LineOne");
-                }
+                content = value;
+                NotifyPropertyChanged("Content");
             }
         }
 
-        private string _lineTwo;
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
-        /// </summary>
-        /// <returns></returns>
-        public string LineTwo
+        public DateTime Date
         {
             get
             {
-                return _lineTwo;
+                return date;
             }
             set
             {
-                if (value != _lineTwo)
-                {
-                    _lineTwo = value;
-                    NotifyPropertyChanged("LineTwo");
-                }
+                date = value;
+                NotifyPropertyChanged("Date");
             }
         }
 
-        private string _lineThree;
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
-        /// </summary>
-        /// <returns></returns>
-        public string LineThree
+        public string Icon
         {
             get
             {
-                return _lineThree;
+                return icon;
             }
             set
             {
-                if (value != _lineThree)
-                {
-                    _lineThree = value;
-                    NotifyPropertyChanged("LineThree");
-                }
+                icon = value;
+                NotifyPropertyChanged("Icon");
+            }
+        }
+
+        public string Identifier
+        {
+            get
+            {
+                return identifier;
+            }
+            set
+            {
+                identifier = value;
+                NotifyPropertyChanged("Identifier");
+            }
+        }
+
+        public string Title
+        {
+            get
+            {
+                return title;
+            }
+            set
+            {
+                title = value;
+                NotifyPropertyChanged("Title");
             }
         }
     }

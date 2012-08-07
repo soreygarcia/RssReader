@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\MessageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Messages.resx">

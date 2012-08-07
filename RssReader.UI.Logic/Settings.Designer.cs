@@ -59,5 +59,23 @@ namespace RssReader.UI.Logic {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://feeds.feedburner.com/SoreyGarcia?format=xml.
+        /// </summary>
+        internal static string BlogUri {
+            get {
+                return ResourceManager.GetString("BlogUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://twitter.com/statuses/user_timeline/17230579.rss.
+        /// </summary>
+        internal static string TwitterUri {
+            get {
+                return ResourceManager.GetString("TwitterUri", resourceCulture);
+            }
+        }
     }
 }
